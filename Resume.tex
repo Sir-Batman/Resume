@@ -1,0 +1,188 @@
+\documentclass[letterpaper,10pt,titlepage]{article}                                     
+
+% TODO: Add Graduate studies to "Education"
+% Add ROS to skills
+% Mark Undergrad RA as no longer "current"
+% Add graduate work experience?
+% Remove Carve Lab?
+% Remove some Achievements and awards, except for a couple major ones?
+%    this section would be better filled with NSF GRFP if I get it.
+% Keep at one page for now. Add other pages as publications start to become a thing.
+
+\usepackage{amssymb}                                         
+\usepackage{amsmath}                                         
+\usepackage{amsthm}                                          
+
+\usepackage{alltt}                                           
+\usepackage{float}
+\usepackage{color}
+
+\usepackage{url}
+
+\usepackage{balance}
+\usepackage[TABBOTCAP, tight]{subfigure}
+\usepackage{enumitem}
+
+\usepackage{pstricks, pst-node}
+
+\usepackage{geometry}
+\geometry{textheight=10in, textwidth=7.5in}
+
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{verbatim}
+
+
+%% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {Connor Yates},
+  pdfkeywords = {resume},
+  pdftitle = {Connor Yates Resume},
+  pdfsubject = {Resume},
+  pdfpagemode = UseNone
+}
+
+\parindent = 0.0 in
+%\parskip = 0.2 in
+
+%Modify the \section command
+\titleformat{\section}
+	{\normalfont\Large}{\thesection}{1em}{}[{\titlerule[0.6pt]}]
+\titlespacing{\section}{0pt}{1pt}{3pt}
+
+
+
+
+\begin{document}
+
+\pagestyle{empty}%                                                      Get rid of page numbers and such
+\par{\centering{\Huge Connor \textsc{Yates}}\bigskip\par}%              Name at top
+
+\begin{tabularx}{\linewidth}{Xr}%                                       Contatct Information
+\textsc{Contact Information} & \\\hline
+(541) 602-7403 & \href{mailto:cl.yates.42@gmail.com}{cl.yates.42@gmail.com}\\
+1019 NW Buchanan Avenue & \href{mailto:yatesco@onid.orst.edu}{yatesco@oregonstate.edu}\\
+Corvallis, OR 97330 & \href{http://github.com/Sir-Batman}{github.com/Sir-Batman}\\
+%\href{mailto:cl.yates.42@gmail.com}{cl.yates.42@gmail.com} & \\
+%\href{mailto:yatesco@onid.orst.edu}{yatesco@onid.oregonstate.edu} &\\
+%\href{http://github.com/Sir-Batman}{github.com/Sir-Batman} &  \\
+\end{tabularx}%                                                         End conctact Information
+\\%                                                                     Manual line break for looks
+
+
+\section*{\textsc{Education}}
+% College
+\begin{tabularx}{\textwidth}{Xr}
+\textbf{Oregon State University} & \textit{Corvallis, Oregon} \\
+Graduation Date         & June, 2017 \\
+\end{tabularx}
+% College Description
+\begin{tabularx}{\textwidth}{X}
+Honors Bachelor of Science in Computer Science, College of Engineering and Honors College, 3.84 GPA \\\\
+\end{tabularx}
+
+\begin{comment} % COMMENTED OUT HIGH SCHOOL STUFF
+% highschool
+\begin{tabularx}{\textwidth}{Xr}
+\textbf{Baker High School} & \textit{Baker City, Oregon} \\
+\end{tabularx}
+% highschool description
+\begin{tabularx}{\textwidth}{X}
+Graduated June 2013 as Valedictorian with an Oregon Honors Diploma and Baker High School Honors Diploma \\\\
+\end{tabularx}
+\end{comment}
+
+\section*{\textsc{Skills and Interests}}
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+\item In-depth knowledge of GNU/Linux, Python, C, and C++
+\item Working knowledge of Git, \LaTeX, and POSIX
+\item Experience with neural networks, machine learning, and reinforcement learning techniques.
+%\item Practical knowledge of all major LibreOffice and Microsoft Office programs
+%\item Experience with Ubuntu Versions 12-14, Elementary OS Beta, Mint 16, Rasbian, and Arch Linux 
+\end{itemize}
+
+\section*{\textsc{Work Experience}}
+
+\begin{tabularx}{\linewidth}{Xr}
+\textbf{\textit{Autonomous Agents and Distributed Intelligence Laboratory}} & \\
+\textbf{Undergraduate Research Assistant}          & Winter 2015 -- Current\\
+Corvallis, Oregon & \\
+\end{tabularx}
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+\item Collaborated with other student researchers from around the country on novel research on incorporating others' intent into the perceived decision-making state
+\item Researched methods for reinforcement learning in tightly coupled multiagent domains
+\item Created optimal control policies through a combination of standard neuro-evolutionary methods and hierarchical decision making
+\end{itemize}
+
+\begin{tabularx}{\linewidth}{Xr}
+\textbf{\textit{OSU Department of Electrical Engineering and Computer Science}} & \\
+\textbf{Undergraduate Teaching Assistant}          & Fall 2014 -- Spring 2016\\
+Corvallis, Oregon & \\
+\end{tabularx}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+\item Helped teach the introductory Computer Science series, CS 160, 161, and 162, at Oregon State University
+\item Worked in teams of 3 Teaching Assistants to lead laboratory sessions
+\item Held office hours to help students learn programming concepts and solve homework problems
+\item Graded students' programming assignments
+\end{itemize}
+
+\begin{tabularx}{\linewidth}{Xr}
+\textbf{\textit{Chick Tech}}   & \textbf{Volunteer}\\
+\textbf{Workshop Volunteer}    & Summer 2014, Fall 2015\\
+Corvallis, Oregon & \\
+\end{tabularx}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+\item Developed a curriculum for a weekend workshop on game development with a team of volunteers
+\item Taught the weekend workshop to high school girls to encourage their interest in STEM fields
+\end{itemize}
+
+\begin{tabularx}{\linewidth}{Xr}
+\textbf{\textit{OSU CARVE Lab}} & \textbf{Volunteer}\\
+\textbf{Simulation Developer}   & Spring 2014 -- Fall 2014\\
+Corvallis, Oregon & \\
+\end{tabularx}
+
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+\item Worked with a team of psychologists to create virtually simulated testing environments for experiments
+\item Designed, programmed, and debugged a testing environment to the standards of the experiment design
+\item Created virtual testing environments using Python and the Vizard Virtual Reality libraries for Spectroscopic Head-Mounted Displays Simulations
+\end{itemize}
+
+
+\begin{comment} % COMMENTED OUT CROSSROADS
+\begin{tabularx}{\linewidth}{Xr}
+\textbf{\textit{Crossroads Carnegie Art Center}} & \textbf{Volunteer}\\
+\textbf{Technical Support, Web Master}           & Summer 2013 -- Fall 2013, Current\\
+Baker City, Oregon & \\
+\end{tabularx}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+\item Created digital backups of previous years tax information
+\item Transferred customer data to a new cloud database for the Center
+\item Maintained custom PHP/XHTML website to specifications
+\item Provided consultation on creation of requirements for a new website
+\end{itemize}
+\end{comment}
+
+
+\section*{\textsc{Achievements and Awards}}
+~\\
+~\\
+\begin{tabularx}{\linewidth}{>{\centering\arraybackslash}X|>{\centering\arraybackslash}X}
+%OSU Honor Roll Fall Term 2013, Winter Term 2014, Spring Term 2014 & Leo Adler Scholarship \\ %Move the leo to the bottom for now, and consider what to do with the honor roll
+Charis Initiative Scholarship & Rhodes Brothers Scholarship \\
+Alan McCullough Scholarship & OSU Dean's Engineering Scholarship \\
+OSU Academic Achievement Award & OSU Computer Science Scholarship \\
+Leo Adler Scholarship & Oregon State Honor Roll\\
+\end{tabularx}
+
+
+\end{document}
+
+
