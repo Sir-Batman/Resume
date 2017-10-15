@@ -1,3 +1,5 @@
+# Ignore my test build pdf, only include the release version
+Resume.pdf
 ## Core latex/pdflatex auxiliary files:
 *.aux
 *.lof

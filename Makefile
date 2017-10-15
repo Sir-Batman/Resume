@@ -2,6 +2,11 @@ TARGET=Resume
 
 default: pdf
 
+release: $(TARGET).tex
+	latexmk $(TARGET).tex
+	dvipdfm $(TARGET).dvi -o "Connor_Yates_Resume.pdf"
+
+
 pdf: $(TARGET).tex
 	latexmk $(TARGET).tex
 	dvipdfm $(TARGET).dvi
