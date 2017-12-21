@@ -40,6 +40,8 @@
   pdfpagemode = UseNone
 }
 
+% Use a variable to set a standard column width across all two-column elements in the document
+\newcommand{\leftW}{0.28\textwidth}
 \parindent = 0.0 in
 %\parskip = 0.2 in
 
@@ -48,13 +50,10 @@
 	{\normalfont\Large}{\thesection}{1em}{}[{\titlerule[0.6pt]}]
 \titlespacing{\section}{0pt}{1pt}{3pt}
 
-
-
-
 \begin{document}
 
 \pagestyle{empty}%                                                      Get rid of page numbers and such
-\par{\centering{\Huge Connor \textsc{Yates}}\bigskip\par}%              Name at top
+\par{\centering{\huge Connor \textsc{Yates}}\bigskip\par}%              Name at top
 
 \begin{tabularx}{\linewidth}{Xr}%                                       Contatct Information
 \textsc{Contact Information} & \\\hline
@@ -69,23 +68,16 @@
 
 
 \section*{\textsc{Education}}
-% College
-\begin{tabularx}{\textwidth}{Xr}
-\textbf{Oregon State University} & \textit{Corvallis, Oregon} \\
-Graduation Date         & June, 2022 \\
-\end{tabularx}
 % College Description
-\begin{tabularx}{\textwidth}{X}
-PhD Student in robotics, advised by Kagan Tumer. Researching methods for introspection and intent reasoning in multiagent systems.\\\\
-\end{tabularx}
+\begin{tabularx}{\textwidth}{p{\leftW}X}
+	Ph.D. Student in robotics & \textbf{Oregon State University}, Corvallis OR 97331\\
 
-\begin{tabularx}{\textwidth}{Xr}
-\textbf{Oregon State University} & \textit{Corvallis, Oregon} \\
-Graduation Date         & June, 2017 \\
+	\mbox{2017 - Present} \mbox{Expected Graduation June, 2022}& Advised by Kagan Tumer. Researching methods for introspection and intent reasoning in multiagent systems.\\
+	 &\\
 \end{tabularx}
-% College Description
-\begin{tabularx}{\textwidth}{X}
-Honors Bachelor of Science in Computer Science, College of Engineering and Honors College, 3.84 GPA \\\\
+\begin{tabularx}{\textwidth}{p{\leftW}X}
+	Honors B.S., \textit{magna cum laude} & \textbf{Oregon State University}, Corvallis OR 97331\\
+	2017 & Honors Bachelor of Science in Computer Science, College of Engineering and Honors College, 3.84 GPA \\
 \end{tabularx}
 
 \section*{\textsc{Skills and Interests}}
@@ -97,19 +89,18 @@ Honors Bachelor of Science in Computer Science, College of Engineering and Honor
 %\item Experience with Ubuntu Versions 12-14, Elementary OS Beta, Mint 16, Rasbian, and Arch Linux 
 \end{itemize}
 
-\section*{\textsc{Work Experience}}
-\begin{tabularx}{\linewidth}{Xr}
-\textbf{\textit{OSU Department of Mechanical, Industrial, and Manufacturing Engineering}} & \\
-\textbf{Graduate Teaching Assistant}          & September - December 2017\\
-Corvallis, Oregon & \\
+
+\section*{\textsc{Teaching}}
+\begin{tabularx}{\linewidth}{p{\leftW}X}
+	\textit{Intelligent Robotics}&Teaching Assistant, Fall 2017\\
+	ROB 456 & Taught modern algorithms and tools for robotics development and deployment like Bayes rule, SLAM, A*, and ROS. Held office hours and graded assignments. Helped debug programs interfacing with ROS. \\
+	&\\
+	\textit{Introduction to Computer Science} & Teaching Assistant, Fall '14, Winter '15, Spring '15, Fall '15, Winter '16, Spring '16\\
+	\textit{CS 160} \textit{CS 161} \textit{CS 162} &  Lead laboratory sections in teams of 3 TA's. Taught fundamental programming concepts like memory and pointers, functions, and recursion in Python, C, and C++. Held office hours and graded assignments.
 \end{tabularx}
 
-\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
-\item GTA for ROB 456, Intelligent Robotics
-\item Held office hours and graded assignments for students
-\item Helped debug programs interfacing with ROS
-\end{itemize}
 
+\section*{\textsc{Work Experience}}
 \begin{tabularx}{\linewidth}{Xr}
 \textbf{\textit{Autonomous Agents and Distributed Intelligence Laboratory}} & \\
 \textbf{Undergraduate Research Assistant}          & February 2015 -- June 2017\\
@@ -121,18 +112,6 @@ Corvallis, Oregon & \\
 \item Created optimal control policies through a combination of standard neuro-evolutionary methods and hierarchical decision making
 \end{itemize}
 
-\begin{tabularx}{\linewidth}{Xr}
-\textbf{\textit{OSU Department of Electrical Engineering and Computer Science}} & \\
-\textbf{Undergraduate Teaching Assistant}          & September 2014 -- June 2016\\
-Corvallis, Oregon & \\
-\end{tabularx}
-
-\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
-\item Helped teach the introductory Computer Science series, CS 160, 161, and 162, at Oregon State University
-\item Worked in teams of 3 Teaching Assistants to lead laboratory sessions
-\item Held office hours to help students learn programming concepts and solve homework problems
-\item Graded students' programming assignments
-\end{itemize}
 
 \begin{tabularx}{\linewidth}{Xr}
 \textbf{\textit{Chick Tech}}   & \textbf{Volunteer}\\
