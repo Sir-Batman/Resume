@@ -47,25 +47,19 @@
 
 %Modify the \section command
 \titleformat{\section}
-	{\normalfont\Large}{\thesection}{1em}{}[{\titlerule[0.6pt]}]
+	{\normalfont\Large}{\thesection}{1em}{}[]%{\titlerule[0.6pt]}% <-- Put inside [] to bring back section lines
 \titlespacing{\section}{0pt}{1pt}{3pt}
 
 \begin{document}
 
 \pagestyle{empty}%                                                      Get rid of page numbers and such
-\par{\centering{\huge Connor \textsc{Yates}}\bigskip\par}%              Name at top
-
-\begin{tabularx}{\linewidth}{Xr}%                                       Contatct Information
-\textsc{Contact Information} & \\\hline
-(541) 602-7403 & \url{yatesco@oregonstate.edu}\\
-1019 NW Buchanan Avenue & \url{http://people.oregonstate.edu/\~yatesco}\\
-	Corvallis, OR 97330 & \\
-%\href{mailto:cl.yates.42@gmail.com}{cl.yates.42@gmail.com} & \\
-%\href{mailto:yatesco@onid.orst.edu}{yatesco@onid.oregonstate.edu} &\\
-%\href{http://github.com/Sir-Batman}{github.com/Sir-Batman} &  \\
-\end{tabularx}%                                                         End conctact Information
-\\%                                                                     Manual line break for looks
-
+\par{\centering{
+	{\LARGE \textbf{Connor Yates}}\\
+	\vspace{0.3em}
+	1019 NW Buchanan Avenue, Corvallis, OR 97330 \\
+	\url{yatesco@oregonstate.edu} $\bullet$ \url{http://people.oregonstate.edu/\~yatesco}
+	\rule{\linewidth}{0.4pt}
+	}\par}
 
 \section*{\textsc{Education}}
 % College Description
