@@ -21,12 +21,20 @@
 
 \usepackage{pstricks, pst-node}
 
-\usepackage[left=0.5in, right=0.5in, top=0.5in, bottom=0.5in]{geometry}
+\usepackage[margin=1in]{geometry}
 
-\usepackage{hyperref}
 \usepackage{tabularx}
 \usepackage{titlesec}
 \usepackage{verbatim}
+
+\usepackage{bibentry}
+\makeatletter\let\saved@bibitem\@bibitem\makeatother
+\usepackage[colorlinks=true]{hyperref}
+\makeatletter\let\@bibitem\saved@bibitem\makeatother
+\usepackage{hanging}
+\newcommand\publication[1]{%
+	\smallskip\par\hangpara{1.5em}{1}\bibentry{#1}\smallskip
+}
 
 
 %% The following metadata will show up in the PDF properties
@@ -56,15 +64,21 @@
 \par{\centering{
 	{\LARGE \textbf{Connor Yates}}\\
 	\vspace{0.3em}
-	1019 NW Buchanan Avenue, Corvallis, OR 97330 \\
-	\url{yatesco@oregonstate.edu} $\bullet$ \url{http://people.oregonstate.edu/\~yatesco}
+	Ph.D. Student, Robotics\\
+	Oregon State University\\
+	204 Rogers hall, Corvallis, OR 97331-6770\\
+	(541) 602-7403\\
+	\url{yatesco@oregonstate.edu} \\
+	\url{http://people.oregonstate.edu/\~yatesco}
 	\rule{\linewidth}{0.4pt}
 	}\par}
 
+\section*{\textsc{Research Focus}}
+% Describe research here
 \section*{\textsc{Education}}
 % College Description
 \begin{tabularx}{\textwidth}{p{\leftW}X}
-	Ph.D. Student in robotics & \textbf{Oregon State University}, Corvallis OR 97331\\
+	Ph.D. Student in Robotics & \textbf{Oregon State University}, Corvallis OR 97331\\
 
 	\mbox{2017 - Present} \mbox{Expected Graduation June, 2022}& Advised by Kagan Tumer. Researching methods for introspection and intent reasoning in multiagent systems.\\
 	 &\\
@@ -84,25 +98,23 @@
 
 \section*{\textsc{Teaching}}
 \begin{tabularx}{\linewidth}{p{\leftW}X}
-	\textbf{Intelligent Robotics}&	ROB 456 \\
-	Teaching Assistant & Fall 2017\\
+	\textbf{\mbox{Computer Programming for} \mbox{Mechanical Systems}} & Teaching Assistant, Winter 2018\\
+	ME 499/599 & Taught basics of the Python programming language and how it can be used for analysis and control of mechanical systems. \\
+	\\
+	\textbf{Intelligent Robotics}&Teaching Assistant, Fall 2017\\
+	ROB 456 & Taught modern algorithms and tools for robotics development and deployment like Bayes rule, SLAM, A*, and ROS. Held office hours and graded assignments. Helped debug programs interfacing with ROS. \\
+	\\
+	\textbf{\mbox{Introduction to} \mbox{Computer Science}} & Teaching Assistant, Fall '14, Winter '15, Spring '15, Fall '15, Winter '16, Spring '16\\
+	CS 160, CS 161, CS 162 &  Lead laboratory sections in teams of 3 TA's. Taught fundamental programming concepts like memory and pointers, functions, and recursion in Python, C, and C++. Held office hours and graded assignments.
 \end{tabularx}
-\begin{itemize}\itemsep1pt \parskip0pt \parsep10pt
-	\item Taught modern algorithms and tools for robotics development and deployment like Bayes rule, SLAM, A*, and ROS.
-	\item Helped debug programs interfacing with ROS. 
-\end{itemize}
 
-\begin{tabularx}{\linewidth}{p{\leftW}X}
-	\textbf{\mbox{Introduction to} \mbox{Computer Science}} & CS 160, CS 161, CS 162 \\
-	Teaching Assistant & 2014-2015 \& 2015-2016 Academic Years\\
-\end{tabularx}
-\begin{itemize}\itemsep1pt \parskip0pt \parsep10pt
-	\item Lead laboratory sections in teams of 3 TA's.
-	\item Taught fundamental programming concepts like memory and pointers, functions, and recursion in Python, C, and C++.
-\end{itemize}
+\section*{\textsc{Publications}}
+\nobibliography{publications.bib}
+\bibliographystyle{acm}
+\publication{khadka:18:aamas}
 
 
-\section*{\textsc{Work Experience}}
+\section*{\textsc{Professional Experience}}
 \begin{tabularx}{\linewidth}{Xr}
 	\textbf{OSU Autonomous Agents and Distributed Intelligence Laboratory} & Corvallis, OR\\
 \end{tabularx}
@@ -139,7 +151,6 @@ Workshop Lead Volunteer          &  August 2014, September 2015\\
 \item Created virtual testing environments using Python and the Vizard Virtual Reality libraries for Spectroscopic Head-Mounted Displays Simulations
 \end{itemize}
 
-
 \begin{comment} % COMMENTED OUT CROSSROADS
 \begin{tabularx}{\linewidth}{Xr}
 \textbf{\textit{Crossroads Carnegie Art Center}} & \textbf{Volunteer}\\
@@ -154,7 +165,11 @@ Baker City, Oregon & \\
 \item Provided consultation on creation of requirements for a new website
 \end{itemize}
 \end{comment}
-
+\subsection*{Public Talks and Outreach}
+\begin{itemize}
+	\item Linux Users Group and ACM Chapter, Oregon State University. ``Open Source Robotics,'' February 2018
+	\item Inspiration Dissemination (Radio, KBVR), Oregon State University. ``How many robots does it take to screw in a light bulb?'' February 2018. 
+\end{itemize}
 
 \section*{\textsc{Achievements and Awards}}
 \begin{tabularx}{\linewidth}{>{\centering\arraybackslash}X|>{\centering\arraybackslash}X}
