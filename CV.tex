@@ -1,0 +1,171 @@
+\documentclass[letterpaper,10pt,titlepage]{article}                                     
+
+% TODO:
+% Remove some Achievements and awards, except for a couple major ones?
+%    this section would be better filled with NSF GRFP if I get it.
+% Keep at one page for now. Add other pages as publications start to become a thing.
+
+\usepackage{amssymb}                                         
+\usepackage{amsmath}                                         
+\usepackage{amsthm}                                          
+
+\usepackage{alltt}                                           
+\usepackage{float}
+\usepackage{color}
+
+\usepackage{url}
+
+\usepackage{balance}
+\usepackage[TABBOTCAP, tight]{subfigure}
+\usepackage{enumitem}
+
+\usepackage{pstricks, pst-node}
+
+\usepackage[left=0.5in, right=0.5in, top=0.5in, bottom=0.5in]{geometry}
+
+\usepackage{hyperref}
+\usepackage{tabularx}
+\usepackage{titlesec}
+\usepackage{verbatim}
+
+
+%% The following metadata will show up in the PDF properties
+\hypersetup{
+  colorlinks = true,
+  urlcolor = black,
+  pdfauthor = {Connor Yates},
+  pdfkeywords = {resume},
+  pdftitle = {Connor Yates Resume},
+  pdfsubject = {Resume},
+  pdfpagemode = UseNone
+}
+
+% Use a variable to set a standard column width across all two-column elements in the document
+\newcommand{\leftW}{0.32\textwidth}
+\parindent = 0.0 in
+%\parskip = 0.2 in
+
+%Modify the \section command
+\titleformat{\section}
+	{\normalfont\Large}{\thesection}{1em}{}[]%{\titlerule[0.6pt]}% <-- Put inside [] to bring back section lines
+\titlespacing{\section}{0pt}{1pt}{3pt}
+
+\begin{document}
+
+\pagestyle{empty}%                                                      Get rid of page numbers and such
+\par{\centering{
+	{\LARGE \textbf{Connor Yates}}\\
+	\vspace{0.3em}
+	1019 NW Buchanan Avenue, Corvallis, OR 97330 \\
+	\url{yatesco@oregonstate.edu} $\bullet$ \url{http://people.oregonstate.edu/\~yatesco}
+	\rule{\linewidth}{0.4pt}
+	}\par}
+
+\section*{\textsc{Education}}
+% College Description
+\begin{tabularx}{\textwidth}{p{\leftW}X}
+	Ph.D. Student in robotics & \textbf{Oregon State University}, Corvallis OR 97331\\
+
+	\mbox{2017 - Present} \mbox{Expected Graduation June, 2022}& Advised by Kagan Tumer. Researching methods for introspection and intent reasoning in multiagent systems.\\
+	 &\\
+\end{tabularx}
+\begin{tabularx}{\textwidth}{p{\leftW}X}
+	Honors B.S., \textit{magna cum laude} & \textbf{Oregon State University}, Corvallis OR 97331\\
+	2017 & Honors Bachelor of Science in Computer Science, College of Engineering and Honors College, 3.84 GPA \\
+\end{tabularx}
+
+\section*{\textsc{Skills and Interests}}
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+\item Research involving neural networks, machine learning, reinforcement learning, and evolutionary learning techniques
+\item Interested in solving distributed optimization, multirobot control problems, and robotics problems in the real world
+\item In-depth knowledge and experience with GNU/Linux, Python, C/C++, \LaTeX, Git, and ROS
+\end{itemize}
+
+
+\section*{\textsc{Teaching}}
+\begin{tabularx}{\linewidth}{p{\leftW}X}
+	\textbf{Intelligent Robotics}&	ROB 456 \\
+	Teaching Assistant & Fall 2017\\
+\end{tabularx}
+\begin{itemize}\itemsep1pt \parskip0pt \parsep10pt
+	\item Taught modern algorithms and tools for robotics development and deployment like Bayes rule, SLAM, A*, and ROS.
+	\item Helped debug programs interfacing with ROS. 
+\end{itemize}
+
+\begin{tabularx}{\linewidth}{p{\leftW}X}
+	\textbf{\mbox{Introduction to} \mbox{Computer Science}} & CS 160, CS 161, CS 162 \\
+	Teaching Assistant & 2014-2015 \& 2015-2016 Academic Years\\
+\end{tabularx}
+\begin{itemize}\itemsep1pt \parskip0pt \parsep10pt
+	\item Lead laboratory sections in teams of 3 TA's.
+	\item Taught fundamental programming concepts like memory and pointers, functions, and recursion in Python, C, and C++.
+\end{itemize}
+
+
+\section*{\textsc{Work Experience}}
+\begin{tabularx}{\linewidth}{Xr}
+	\textbf{OSU Autonomous Agents and Distributed Intelligence Laboratory} & Corvallis, OR\\
+\end{tabularx}
+\begin{tabularx}{\linewidth}{p{\leftW}X}
+Undergraduate Research Assistant          & February 2015 -- June 2017\\
+\end{tabularx}
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+\item Collaborated with other student researchers from around the country on novel research on incorporating others' intent into the perceived decision-making state
+\item Researched methods for reinforcement learning in tightly coupled multiagent domains
+\item Created optimal control policies through a combination of standard neuro-evolutionary methods and hierarchical decision making
+\end{itemize}
+
+
+\begin{tabularx}{\linewidth}{Xr}
+	\textbf{Chick Tech} & Corvallis, OR\\
+\end{tabularx}
+\begin{tabularx}{\linewidth}{p{\leftW}X}
+Workshop Lead Volunteer          &  August 2014, September 2015\\
+\end{tabularx}
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+\item Developed a curriculum for a weekend workshop on game development with a team of volunteers
+\item Taught the weekend workshop to high school girls to encourage their interest in STEM fields
+\end{itemize}
+
+\begin{tabularx}{\linewidth}{Xr}
+	\textbf{OSU CARVE Lab} & Corvallis, OR\\
+\end{tabularx}
+\begin{tabularx}{\linewidth}{p{\leftW}X}
+	Simulation Developer   & March 2014 -- September 2014\\
+\end{tabularx}
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+\item Worked with a team of psychologists to create virtually simulated testing environments for experiments
+\item Designed, programmed, and debugged a testing environment to the standards of the experiment design
+\item Created virtual testing environments using Python and the Vizard Virtual Reality libraries for Spectroscopic Head-Mounted Displays Simulations
+\end{itemize}
+
+
+\begin{comment} % COMMENTED OUT CROSSROADS
+\begin{tabularx}{\linewidth}{Xr}
+\textbf{\textit{Crossroads Carnegie Art Center}} & \textbf{Volunteer}\\
+\textbf{Technical Support, Web Master}           & June 2013 -- August 2013\\
+Baker City, Oregon & \\
+\end{tabularx}
+
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+\item Created digital backups of previous years tax information
+\item Transferred customer data to a new cloud database for the Center
+\item Maintained custom PHP/XHTML website to specifications
+\item Provided consultation on creation of requirements for a new website
+\end{itemize}
+\end{comment}
+
+
+\section*{\textsc{Achievements and Awards}}
+\begin{tabularx}{\linewidth}{>{\centering\arraybackslash}X|>{\centering\arraybackslash}X}
+%OSU Honor Roll Fall Term 2013, Winter Term 2014, Spring Term 2014 & Leo Adler Scholarship \\ %Move the leo to the bottom for now, and consider what to do with the honor roll
+%Charis Initiative Scholarship & Rhodes Brothers Scholarship \\
+%Alan McCullough Scholarship & OSU Computer Science Scholarship \\
+OSU Academic Achievement Award & OSU Dean's Engineering Scholarship \\
+Leo Adler Scholarship & Oregon State University Honor Roll\\
+\end{tabularx}
+
+
+\end{document}
+
+
