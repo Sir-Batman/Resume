@@ -45,9 +45,9 @@
   colorlinks = true,
   urlcolor = black,
   pdfauthor = {Connor Yates},
-  pdfkeywords = {resume},
-  pdftitle = {Connor Yates Resume},
-  pdfsubject = {Resume},
+  pdfkeywords = {CV},
+  pdftitle = {Connor Yates CV},
+  pdfsubject = {CV},
   pdfpagemode = UseNone
 }
 
@@ -58,7 +58,7 @@
 
 %Modify the \section command
 \titleformat{\section}
-	{\normalfont\Large}{\thesection}{1em}{}[]%{\titlerule[0.6pt]}% <-- Put inside [] to bring back section lines
+	{\Large\scshape}{\thesection}{1em}{}[]%{\titlerule[0.6pt]}% <-- Put inside [] to bring back section lines
 \titlespacing{\section}{0pt}{1pt}{3pt}
 
 \begin{document}
@@ -69,31 +69,37 @@
 	\vspace{0.3em}
 	Ph.D. Student, Robotics\\
 	Oregon State University\\
-	204 Rogers hall, Corvallis, OR 97331-6770\\
+	804 NE $2^{nd}$ Street Apt. 11, Corvallis, OR 97330\\
 	(541) 602-7403\\
 	\url{yatesco@oregonstate.edu} \\
 	\url{http://people.oregonstate.edu/\~yatesco}
 	\rule{\linewidth}{0.4pt}
 	}\par}
 
-\section*{\textsc{Research Focus}}
+\section*{Research Focus}
 My interests are in artificial intelligence methods for collaboration and coordination in teams of autonomous agents. I am investigating multi-reward reinforcement learning structures to train teams to operate in tasks with fuzzy concepts of success. 
 I am also interested in how teams of agents synthesize explanations for human observers.
 
-\section*{\textsc{Education}}
+\section*{Education}
 % College Description
 \begin{tabularx}{\textwidth}{p{\leftW}X}
-	Ph.D. Student in Robotics & \textbf{Oregon State University}, Corvallis OR 97331\\
+	Ph.D. Student, Robotics & \textbf{Oregon State University}, Corvallis OR 97331\\
 
 	\mbox{2017 - 2022} & Advised by Kagan Tumer. Researching methods for introspection and coordination in multiagent systems.\\
 	 &\\
+\end{tabularx}
+\begin{tabularx}{\textwidth}{p{\leftW}X}
+	M.S., Robotics & \textbf{Oregon State University}, Corvallis OR 97331\\
+	
+	\mbox{2019} & Advised by Kagan Tumer. Multi-Reward Learning for Behavior-Driven Exploration.\\
+	&\\
 \end{tabularx}
 \begin{tabularx}{\textwidth}{p{\leftW}X}
 	Honors B.S., \textit{magna cum laude} & \textbf{Oregon State University}, Corvallis OR 97331\\
 	2017 & Honors Bachelor of Science in Computer Science, College of Engineering and Honors College, 3.84 GPA \\
 \end{tabularx}
 
-\section*{\textsc{Skills and Interests}}
+\section*{Skills and Interests}
 \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
 \item Interested in solving distributed optimization, multi-robot control problems, and robotics problems in the real world
 \item Research involving neural networks, machine learning, reinforcement learning, and evolutionary learning techniques
@@ -101,32 +107,43 @@ I am also interested in how teams of agents synthesize explanations for human ob
 \end{itemize}
 
 
-\section*{\textsc{Teaching}}
+\section*{Teaching and Advising}
 \begin{tabularx}{\linewidth}{p{\leftW}X}
+	\textbf{Intelligent Robotics}&Teaching Assistant, Fall 2017, Fall 2018, Fall 2019\\
+	ROB 456 & Taught modern algorithms and tools for robotics development and deployment like Bayes rule, SLAM, A*, and ROS. Helped debug programs interfacing with ROS. \\
+	\\
 	\textbf{\mbox{Computer Programming for} \mbox{Mechanical Systems}} & Teaching Assistant, Winter 2018\\
 	ME 499/599 & Taught basics of the Python programming language and how it can be used for analysis and control of mechanical systems. \\
-	\\
-	\textbf{Intelligent Robotics}&Teaching Assistant, Fall 2017, Fall 2018\\
-	ROB 456 & Taught modern algorithms and tools for robotics development and deployment like Bayes rule, SLAM, A*, and ROS. Helped debug programs interfacing with ROS. \\
 	\\
 	\textbf{\mbox{Introduction to} \mbox{Computer Science}} & Teaching Assistant, Fall '14, Winter '15, Spring '15, Fall '15, Winter '16, Spring '16\\
 	CS 160, CS 161, CS 162 &  Lead laboratory sections in teams of 3 TA's. Taught fundamental programming concepts like memory and pointers, functions, and recursion in Python, C, and C++.
 \end{tabularx}
 
 
-\section*{\textsc{Professional Experience}}
+\section*{Professional Experience}
 
 \begin{tabularx}{\linewidth}{Xr}
-	\textbf{OSU Robotics Graduate Student Association} & Corvallis, OR\\
+	\textbf{OSU Autonomous Agents and Distributed Intelligence Laboratory} & Corvallis, OR\\
 \end{tabularx}
 \begin{tabularx}{\linewidth}{p{\leftW}X}
-Faculty Relations Officer          & June 2018 -- June 2019\\
+	Graduate Research Assistant          & September 2017 -- Current\\
 \end{tabularx}
 \begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
-\item Communicate with faculty members to raise awareness of RGSA events and issues in the department
-\item Attend departmental faculty meetings on behalf of RGSA
-\item Coordinate departmental events with graduate students and faculty members
+	\item Researching how multiple local rewards can be leveraged to create adept and explainable multiagent teams when the global reward is intractable
 \end{itemize}
+
+\begin{tabularx}{\linewidth}{Xr}
+	\textbf{Near-Earth Robotics and Deployable Science, Naval Research Lab} & Washington, D.C.\\
+\end{tabularx}
+\begin{tabularx}{\linewidth}{p{\leftW}X}
+	Student Trainee Computer Science & June 2019 -- September 2019\\
+\end{tabularx}
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+	\item Research and development of autonomous multi-robot systems
+	\item Simulation of coordination algorithms and construction of new robotic platforms to test algorithms
+\end{itemize}
+
+
 
 \begin{tabularx}{\linewidth}{Xr}
 	\textbf{OSU Autonomous Agents and Distributed Intelligence Laboratory} & Corvallis, OR\\
@@ -140,16 +157,7 @@ Undergraduate Research Assistant          & February 2015 -- June 2017\\
 \item Created optimal control policies through a combination of standard neuro-evolutionary methods and hierarchical decision making
 \end{itemize}
 
-\begin{tabularx}{\linewidth}{Xr}
-	\textbf{Chick Tech} & Corvallis, OR\\
-\end{tabularx}
-\begin{tabularx}{\linewidth}{p{\leftW}X}
-Workshop Lead Volunteer          &  August 2014, September 2015\\
-\end{tabularx}
-\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
-\item Developed a curriculum for a weekend workshop on game development with a team of volunteers
-\item Taught the weekend workshop to high school girls to encourage their interest in STEM fields
-\end{itemize}
+
 
 \begin{tabularx}{\linewidth}{Xr}
 	\textbf{OSU CARVE Lab} & Corvallis, OR\\
@@ -178,29 +186,55 @@ Baker City, Oregon & \\
 \end{itemize}
 \end{comment}
 
-\section*{Public Talks and Outreach}
+\section*{Volunteer \& Public Outreach}
+\textbf{Public Talks}
 \begin{itemize}
 	\item Linux Users Group and ACM Chapter, Oregon State University. ``Open Source Robotics,'' February 2018
 	\item Inspiration Dissemination (Radio, KBVR), Oregon State University. ``How many robots does it take to screw in a light bulb?'' February 2018. 
 \end{itemize}
+\begin{tabularx}{\linewidth}{Xr}
+	\textbf{OSU Robotics Graduate Student Association} & Corvallis, OR\\
+\end{tabularx}
+\begin{tabularx}{\linewidth}{p{\leftW}X}
+	Faculty Relations Officer          & June 2018 -- June 2029\\
+\end{tabularx}
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+	\item Communicate with faculty members to raise awareness of RGSA events and issues in the department
+	\item Attend departmental faculty meetings on behalf of RGSA
+	\item Coordinate departmental events with graduate students and faculty members
+\end{itemize}
+\begin{tabularx}{\linewidth}{Xr}
+	\textbf{Chick Tech} & Corvallis, OR\\
+\end{tabularx}
+\begin{tabularx}{\linewidth}{p{\leftW}X}
+	Workshop Lead Volunteer          &  August 2014, September 2015\\
+\end{tabularx}
+\begin{itemize} \itemsep1pt \parskip0pt \parsep0pt
+	\item Developed a curriculum for a weekend workshop on game development with a team of volunteers
+	\item Taught the weekend workshop to high school girls to encourage their interest in STEM fields
+\end{itemize}
 
 
-\section*{\textsc{Publications}}
+\section*{Achievements and Awards}
+\begin{tabularx}{\linewidth}{>{\centering\arraybackslash}X|>{\centering\arraybackslash}X}
+	%OSU Honor Roll Fall Term 2013, Winter Term 2014, Spring Term 2014 & Leo Adler Scholarship \\ %Move the leo to the bottom for now, and consider what to do with the honor roll
+	%Charis Initiative Scholarship & Rhodes Brothers Scholarship \\
+	%Alan McCullough Scholarship & OSU Computer Science Scholarship \\
+	OSU Academic Achievement Award & OSU Dean's Engineering Scholarship \\
+	Leo Adler Scholarship & Oregon State University Honor Roll\\
+\end{tabularx}
+
+\section*{Publications}
 \nobibliography{publications}
 \bibliographystyle{acm}
+\publication{Yates:2020:MFL}
+\publication{Khadka:2019:MRS}
 \publication{Chung2018}
 \publication{Khadka:2018:MMF:3237383.3238043}
 \publication{klinkhammer-18}
 \publication{Khadka:2019}
 
-\section*{\textsc{Achievements and Awards}}
-\begin{tabularx}{\linewidth}{>{\centering\arraybackslash}X|>{\centering\arraybackslash}X}
-%OSU Honor Roll Fall Term 2013, Winter Term 2014, Spring Term 2014 & Leo Adler Scholarship \\ %Move the leo to the bottom for now, and consider what to do with the honor roll
-%Charis Initiative Scholarship & Rhodes Brothers Scholarship \\
-%Alan McCullough Scholarship & OSU Computer Science Scholarship \\
-OSU Academic Achievement Award & OSU Dean's Engineering Scholarship \\
-Leo Adler Scholarship & Oregon State University Honor Roll\\
-\end{tabularx}
+
 
 
 \end{document}
